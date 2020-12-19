@@ -1,0 +1,6 @@
+select *,
+case when cd.city = 'Berlin' Then 'Berlin' end as closest_city
+from global_data gd
+join city_data cd
+on gd.year = cd.year
+order by cd.year asc
