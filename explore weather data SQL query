@@ -1,6 +1,6 @@
-select *,
-case when cd.city = 'Berlin' Then 'Berlin' end as closest_city
+select gd.year as year, gd.avg_temp as global_avg_temp, cd.city as city_closest, cd.avg_temp as city_avg_temp
 from global_data gd
 join city_data cd
 on gd.year = cd.year
+Where cd.city = 'Berlin'
 order by cd.year asc
