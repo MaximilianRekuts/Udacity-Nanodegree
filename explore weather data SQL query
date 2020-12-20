@@ -4,4 +4,4 @@ from global_data gd
 join city_data cd
 on gd.year = cd.year
 Where cd.city = 'Berlin'
-order by cd.year asc
+order by cd.year asc;
